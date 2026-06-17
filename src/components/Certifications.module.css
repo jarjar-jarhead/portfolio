@@ -1,0 +1,5 @@
+.certsSection { padding: 5rem 10%; background-color: rgba(255, 255, 255, 0.02); }
+.sectionTitle { font-size: 2.5rem; border-bottom: 2px solid var(--neon-green); display: inline-block; margin-bottom: 3rem; }
+.certList { list-style: none; display: flex; flex-direction: column; gap: 1.5rem; }
+.certItem { display: flex; align-items: flex-start; gap: 1rem; font-size: 1.1rem; }
+.bullet { color: var(--crimson-red); font-size: 1.2rem; }

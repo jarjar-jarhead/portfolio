@@ -1,0 +1,62 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  background-color: rgba(10, 15, 29, 0.9); /* Semi-transparent */
+  backdrop-filter: blur(8px);               /* Blurred background glass effect */
+  border-bottom: 2px solid var(--neon-green);
+  z-index: 1000; /* Keeps it floating on top of everything */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-light);
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: var(--neon-green);
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect sparks green */
+.navLinks a:hover {
+  color: var(--neon-green);
+  text-shadow: 0 0 8px var(--neon-green);
+}
+
+/* Red accent button for your resume/contact */
+.resumeBtn {
+  background-color: transparent;
+  color: var(--crimson-red);
+  border: 2px solid var(--crimson-red);
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resumeBtn:hover {
+  background-color: var(--crimson-red);
+  color: var(--text-light);
+  box-shadow: 0 0 12px var(--crimson-red);
+}
