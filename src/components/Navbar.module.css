@@ -11,6 +11,7 @@
   backdrop-filter: blur(8px);               /* Blurred background glass effect */
   border-bottom: 2px solid var(--neon-green);
   z-index: 1000; /* Keeps it floating on top of everything */
+  padding: 15px;
 }
 
 .logo {
