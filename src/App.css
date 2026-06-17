@@ -1,12 +1,12 @@
 /* 1. Import the Cyberpunk fonts from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Outfit:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Outfit:wght@300;400;600&display=swap");
 
 :root {
   --bg-dark: #0a0f1d;
-  --neon-green: #00c875;    
-  --crimson-red: #ff3b57;   
-  --text-light: #f1f5f9;    
-  --text-muted: #94a3b8;    
+  --neon-green: #00c875;
+  --crimson-red: #ff3b57;
+  --text-light: #f1f5f9;
+  --text-muted: #94a3b8;
 }
 
 * {
@@ -20,12 +20,16 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-light);
   /* 2. Apply the clean, sharp font for all standard text */
-  font-family: 'Outfit', sans-serif; 
-  padding-top: 80px; 
+  font-family: "Outfit", sans-serif;
+  padding-top: 80px;
 }
 
 /* 3. Apply the futuristic display font to all headings */
-h1, h2, h3, h4, .logo {
-  font-family: 'Orbitron', sans-serif;
+h1,
+h2,
+h3,
+h4,
+.logo {
+  font-family: "Orbitron", sans-serif;
   letter-spacing: 2px;
 }

@@ -1,17 +1,50 @@
-.projectsSection { padding: 5rem 10%; }
-.sectionTitle { font-size: 2.5rem; border-bottom: 2px solid var(--neon-green); display: inline-block; margin-bottom: 3rem; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+.projectsSection {
+  padding: 5rem 10%;
+}
+.sectionTitle {
+  font-size: 2.5rem;
+  border-bottom: 2px solid var(--neon-green);
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
 
 .card {
   background-color: #111827;
   padding: 2rem;
   border-radius: 8px;
   border: 1px solid #1f2937;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
 }
-.card:hover { transform: translateY(-5px); border-color: var(--neon-green); }
-.card h3 { margin-bottom: 1rem; color: var(--text-light); }
-.card p { color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem; }
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--neon-green);
+}
+.card h3 {
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+.card p {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
 
-.tools { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-.tools span { background-color: rgba(0, 255, 157, 0.1); color: var(--neon-green); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; }
+.tools {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.tools span {
+  background-color: rgba(0, 255, 157, 0.1);
+  color: var(--neon-green);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}

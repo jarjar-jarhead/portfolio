@@ -6,9 +6,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   background-color: rgba(10, 15, 29, 0.9); /* Semi-transparent */
-  backdrop-filter: blur(8px);               /* Blurred background glass effect */
+  backdrop-filter: blur(8px); /* Blurred background glass effect */
   border-bottom: 2px solid var(--neon-green);
   z-index: 1000; /* Keeps it floating on top of everything */
   padding: 15px;

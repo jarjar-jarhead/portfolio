@@ -1,11 +1,19 @@
-import React from 'react';
-import styles from './Projects.module.css';
+import React from "react";
+import styles from "./Projects.module.css";
 
 function Projects() {
   // Hardcoded temporary array to display projects cleanly
   const myProjects = [
-    { title: "Project One", desc: "A cool web application built with modern tech.", tools: ["React", "Firebase"] },
-    { title: "Project Two", desc: "Another platform solving real-world problems.", tools: ["Java", "SQL"] }
+    {
+      title: "Project One",
+      desc: "A cool web application built with modern tech.",
+      tools: ["React", "Firebase"],
+    },
+    {
+      title: "Project Two",
+      desc: "Another platform solving real-world problems.",
+      tools: ["Java", "SQL"],
+    },
   ];
 
   return (
@@ -17,7 +25,9 @@ function Projects() {
             <h3>{project.title}</h3>
             <p>{project.desc}</p>
             <div className={styles.tools}>
-              {project.tools.map((tool, idx) => <span key={idx}>{tool}</span>)}
+              {project.tools.map((tool, idx) => (
+                <span key={idx}>{tool}</span>
+              ))}
             </div>
           </div>
         ))}
