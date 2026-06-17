@@ -11,7 +11,10 @@ function Hero() {
         </h1>
         <h2 className={styles.subtitle}>Web & Mobile App Developer</h2>
         <p className={styles.description}>
-          I build high-performance applications and clean digital experiences.
+          A developer who consumes knowledge and continues to improve. Utilizing
+the different tools and platforms to discover new things and expand his
+current knowledge and experience. Specializes in creating projects that
+implement logical and functional features.
         </p>
         <a href="#projects" className={styles.heroBtn}>
           View My Work

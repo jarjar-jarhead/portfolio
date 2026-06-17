@@ -2,6 +2,11 @@ import React from "react";
 import styles from "./Navbar.module.css";
 
 function Navbar() {
+  const handleResumeClick = () => {
+    // Looks directly inside your public/ folder for resume.pdf
+    window.open("/resume.pdf", "_blank", "noopener,noreferrer");
+  };
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
@@ -26,7 +31,9 @@ function Navbar() {
         </li>
       </ul>
 
-      <button className={styles.resumeBtn}>Resume</button>
+      <button className={styles.resumeBtn} onClick={handleResumeClick}>
+        Resume
+      </button>
     </nav>
   );
 }
