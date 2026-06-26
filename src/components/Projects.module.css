@@ -108,3 +108,25 @@
   height: 100%;
   border: none;
 }
+
+.actionContainer {
+  margin-top: auto; /* Keeps buttons locked to the bottom edge uniformly */
+  padding-top: 1rem;
+}
+
+.demoLink, .demoBtn {
+  background: none;
+  border: none;
+  color: var(--neon-green);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+  transition: text-shadow 0.3s ease;
+}
+
+.demoLink:hover, .demoBtn:hover {
+  text-shadow: 0 0 8px var(--neon-green);
+}
