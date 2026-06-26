@@ -47,6 +47,8 @@
 .imagePlaceholder {
   flex-shrink: 0;
 }
+
+/* --- Interactive Cyberpunk Avatar Wrapper --- */
 .avatar {
   width: 300px;
   height: 300px;
@@ -56,24 +58,40 @@
   align-items: center;
   justify-content: center;
   color: var(--text-muted);
-  padding: 15px; /* Gives the image some breathing room inside the circle */
-  overflow: hidden; /* Ensures nothing spills out */
+  padding: 15px; 
+  overflow: hidden; 
+  cursor: crosshair; /* Tech HUD design variant pointer */
+  transition: border-style 0.3s ease, box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+/* Outer frame reactive changes on section focus */
+.avatar:hover {
+  border-style: solid; /* Rotates dashed scanning lines into a solid locks frame */
+  transform: scale(1.03); /* Subtle outward punch for the container itself */
+  box-shadow: 0 0 25px rgba(0, 200, 117, 0.5), inset 0 0 15px rgba(0, 200, 117, 0.3);
 }
 
 .avatar img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Forces the whole image to scale down and fit perfectly */
+  object-fit: contain; 
   border-radius: 50%;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), filter 0.3s ease;
 }
 
+/* The actual image zoom interaction layer */
+.avatar:hover img {
+  transform: scale(1.15); /* Sleek targeted zoom */
+  filter: brightness(1.1) contrast(1.05); /* Cyber illumination shift */
+}
 
+/* --- Terminal Text Animations --- */
 .terminalText {
   display: inline-block;
   font-family: 'Courier New', Courier, monospace;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid var(--neon-green); /* The blinking cursor */
+  border-right: 3px solid var(--neon-green);
   width: 0;
   animation: 
     typing 3.5s steps(40, end) forwards,
