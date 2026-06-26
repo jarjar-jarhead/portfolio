@@ -22,7 +22,7 @@ function Projects() {
       title: "E-Commerce Catalogue System",
       desc: "An interactive digital catalog featuring a sleek front-end layout and integrated 3D product previews for seamless motorcycle parts exploration.",
       tools: ["Figma", "Prototyping"],
-      media: { type: "iframe", src: "https://www.figma.com/embed?embed_host=share&url=YOUR_FIGMA_URL" }
+      media: { type: "iframe", src: "https://www.figma.com/design/faj59z9SbLf8qimhKd6v4J/SAD-UI-DESIGN--Copy-?node-id=0-1&m=dev" }
     },
     {
       title: "Foxbyte Note App",
