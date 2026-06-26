@@ -34,7 +34,7 @@ function Projects() {
       title: "Olympus 2D",
       desc: "An action-packed 2D tower defense game featuring strategic lane placement, dynamic enemy wave scaling, and custom upgrade mechanics.",
       tools: ["Unity", "C#", "Game Design"],
-      media: { type: "video", src: "https://www.youtube.com/embed/YOUR_VIDEO_ID" }
+      media: { type: "video", src: "https://sites.google.com/bulsu.edu.ph/mgd-24-25/project-showcase-24-25/bsit-3h-g1/g6" }
     },
   ];
 
