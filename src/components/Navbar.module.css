@@ -61,3 +61,48 @@
   color: var(--text-light);
   box-shadow: 0 0 12px var(--crimson-red);
 }
+
+
+.glitchHeader {
+  position: relative;
+  cursor: pointer;
+}
+
+.glitchHeader:hover::before,
+.glitchHeader:hover::after {
+  content: attr(data-text); /* Pulls text dynamically from HTML markup */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-dark, #05070d);
+}
+
+.glitchHeader:hover::before {
+  left: 2px;
+  text-shadow: -2px 0 #ff0055; /* Crimson split */
+  clip: rect(44px, 450px, 56px, 0);
+  animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+.glitchHeader:hover::after {
+  left: -2px;
+  text-shadow: -2px 0 #00c875; /* Neon green split */
+  clip: rect(85px, 450px, 140px, 0);
+  animation: glitch-anim2 5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+  0% { clip: rect(31px, 9999px, 94px, 0); }
+  10% { clip: rect(112px, 9999px, 76px, 0); }
+  20% { clip: rect(85px, 9999px, 5px, 0); }
+  100% { clip: rect(27px, 9999px, 115px, 0); }
+}
+
+@keyframes glitch-anim2 {
+  0% { clip: rect(76px, 9999px, 116px, 0); }
+  11% { clip: rect(43px, 9999px, 98px, 0); }
+  22% { clip: rect(122px, 9999px, 15px, 0); }
+  100% { clip: rect(9px, 9999px, 55px, 0); }
+}
