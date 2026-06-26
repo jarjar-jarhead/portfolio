@@ -10,7 +10,7 @@ function Projects() {
       title: "SDPT Learn",
       desc: "An interactive learning management web application featuring gamified learning system, structured roadmaps, progress tracking, and dynamic quiz features for students.",
       tools: ["React", "Firebase", "CSS", "Javascript", "JSON"],
-      media: { type: "image", src: "/sdpt-learn-preview.png" } // placeholder path inside public/
+      media: { type: "image", src: "https://youtu.be/w18Ha1udr6Q" } // placeholder path inside public/
     },
     {
       title: "Student Fitness Profile System",
