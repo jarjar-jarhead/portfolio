@@ -17,7 +17,7 @@ function Projects() {
       desc: "A secure web platform built to track physical assessments, manage fitness metrics, and generate comprehensive health profiles for students.",
       tools: ["Python", "Django", "SQL"],
       // Update this url later with your unlisted YouTube link once recorded!
-      action: { type: "link", url: "https://www.youtube.com/watch?v=YOUR_VIDEO_ID", label: "[ Watch Demo ]" }
+      action: { type: "link", url: "https://zonecheck.onrender.com/", label: "[ View Project ]" }
     },
     {
       title: "E-Commerce Catalogue System",
