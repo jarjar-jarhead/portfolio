@@ -14,24 +14,24 @@ function Projects() {
     },
     {
       title: "Student Fitness Profile System",
-      desc: "A secure web platform built to track physical assessments, manage fitness metrics, and generate comprehensive health profiles for students. (Website takes a minute to load in free tier. Teacher UID and pass is Teach and password123",
+      desc: "A secure web platform built to track physical assessments, manage fitness metrics, and generate comprehensive health profiles for students. (Website takes a minute to load in free tier. Teacher UID and pass is Teach and password123)",
       tools: ["Python", "Django", "SQL"],
-      // Update this url later with your unlisted YouTube link once recorded!
+      
       action: { type: "link", url: "https://zonecheck.onrender.com/", label: "[ View Project ]" }
     },
     {
       title: "E-Commerce Catalogue System",
       desc: "An interactive digital catalog featuring a sleek front-end layout and integrated 3D product previews for seamless motorcycle parts exploration.",
       tools: ["Figma", "Prototyping"],
-      // Changed to the clean prototype link architecture
+      
       action: { type: "link", url: "https://www.figma.com/design/faj59z9SbLf8qimhKd6v4J/SAD-UI-DESIGN--Copy-?node-id=0-1&m=dev", label: "[ View Prototype ]" }
     },
     {
       title: "Foxbyte Note App",
       desc: "A lightweight, responsive note-taking application designed for efficient markdown editing, real-time saving, and clean workspace organization.",
       tools: ["React", "JavaScript", "CSS Modules"],
-      // Keeps an in-app popup workflow because it uses a local project asset image/GIF
-      action: { type: "modal", url: "/foxbyte-preview.gif", label: "[ View Showcase ]" }
+      
+      action: { type: "link", url: "https://youtu.be/0yIq44L0NIc", label: "[ View Showcase ]" }
     },
     {
       title: "Olympus 2D",
