@@ -32,12 +32,13 @@ function Projects() {
         { type: "link", url: "https://www.figma.com/design/faj59z9SbLf8qimhKd6v4J/SAD-UI-DESIGN--Copy-?node-id=0-1&m=dev", label: "[ View Prototype ]" }
       ]
     },
-    {
+{
       title: "Foxbyte Note App",
       desc: "A lightweight, responsive note-taking application designed for efficient markdown editing, real-time saving, and clean workspace organization.",
       tools: ["React", "JavaScript", "CSS Modules"],
       actions: [
-        { type: "link", url: "https://youtu.be/0yIq44L0NIc", label: "[ View Showcase ]" }
+        { type: "link", url: "https://youtu.be/0yIq44L0NIc", label: "[ View Showcase ]" },
+        { type: "link", url: "https://www.figma.com/design/SdftBz3JDQneA4TA0JMtIu/Mad-Figma-Design--Copy-?node-id=0-1&t=yH05mNl3TSiR3RBM-1", label: "[ View UI Design ]" }
       ]
     },
     {
