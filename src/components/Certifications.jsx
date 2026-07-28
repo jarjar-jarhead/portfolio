@@ -84,7 +84,7 @@ function Certifications() {
                     href={cert.badgeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={styles.verifyLink}
+                    className={styles.viewBtn}
                   >
                     [ Verify Badge ]
                   </a>
