@@ -80,14 +80,14 @@ function Certifications() {
 
                 {/* External Badge Verification Link */}
                 {cert.badgeUrl && (
-                  <a
+                  <button
                     href={cert.badgeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.viewBtn}
                   >
                     [ Verify Badge ]
-                  </a>
+                  </button>
                 )}
               </div>
             </div>
