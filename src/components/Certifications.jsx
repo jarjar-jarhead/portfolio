@@ -9,7 +9,7 @@ function Certifications() {
     {
       title: "AI Fundamentals: Language and Vision in AI",
       issuer: "Cisco Networking Academy | IBM SkillsBuild / DICT-ITU DTC",
-      date: "July 2026",
+      date: "2026",
       file: "/AIFundamentalsIBM_DICT.pdf", 
       badgeUrl: "https://www.credly.com/badges/b90e7ba7-23cb-41b8-b08e-65d4a6dc35c1/public_url" 
     },
