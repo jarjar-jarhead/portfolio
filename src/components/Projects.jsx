@@ -10,7 +10,7 @@ function Projects() {
       desc: "An automated churn prediction and NLP pipeline leveraging an XGBoost classification model to calculate risk probabilities, integrated with Gemini API to generate executive retention reports from telemetry data and text feedback.",
       tools: ["Python", "XGBoost", "Gemini API", "NLP", "Google Colab"],
       actions: [
-        { type: "link", url: "https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME", label: "[ View Codebase ]" }
+        { type: "link", url: "https://github.com/jarjar-jarhead/customer-churn-sentiment-pipeline", label: "[ View Codebase ]" }
       ]
     },
     {
@@ -18,7 +18,7 @@ function Projects() {
       desc: "A cloud-native Next.js and FastAPI application engineered in GitHub Codespaces. Integrates Gemini and GitHub APIs to automate architectural analysis with a dark-mode Tailwind CSS dashboard rendering live insight reports.",
       tools: ["Next.js", "FastAPI", "Python", "Tailwind CSS", "Gemini API"],
       actions: [
-        { type: "link", url: "https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME", label: "[ View Codebase ]" }
+        { type: "link", url: "https://github.com/jarjar-jarhead/codebase-insight-engine", label: "[ View Codebase ]" }
       ]
     },
     {
