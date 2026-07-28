@@ -49,7 +49,7 @@ function Projects() {
     {
       title: "Foxbyte Note App",
       desc: "A lightweight, responsive note-taking application designed for efficient markdown editing, real-time saving, and clean workspace organization.",
-      tools: ["Android Studio", "Java", "CSS Modules", "Figma"],
+      tools: ["Android Studio", "Java", "Figma"],
       actions: [
         { type: "link", url: "https://youtu.be/0yIq44L0NIc", label: "[ View Showcase ]" },
         { type: "link", url: "https://www.figma.com/design/SdftBz3JDQneA4TA0JMtIu/Mad-Figma-Design--Copy-?node-id=0-1&t=yH05mNl3TSiR3RBM-1", label: "[ View UI Design ]" }
