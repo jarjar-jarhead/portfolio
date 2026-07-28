@@ -24,7 +24,7 @@ function Projects() {
     {
       title: "SDPT Learn",
       desc: "An interactive learning management web application featuring gamified learning system, structured roadmaps, progress tracking, and dynamic quiz features for students.",
-      tools: ["React", "Firebase", "CSS", "Javascript", "JSON"],
+      tools: ["React", "Firebase", "CSS", "Javascript", "JSON", "Figma"],
       actions: [
         { type: "link", url: "https://youtu.be/w18Ha1udr6Q", label: "[ Watch Demo ]" },
         { type: "link", url: "https://canva.link/y6zwit8yeg4gpqg", label: "[ Documentation ]" }
@@ -49,7 +49,7 @@ function Projects() {
     {
       title: "Foxbyte Note App",
       desc: "A lightweight, responsive note-taking application designed for efficient markdown editing, real-time saving, and clean workspace organization.",
-      tools: ["React", "JavaScript", "CSS Modules"],
+      tools: ["Android Studio", "Java", "CSS Modules", "Figma"],
       actions: [
         { type: "link", url: "https://youtu.be/0yIq44L0NIc", label: "[ View Showcase ]" },
         { type: "link", url: "https://www.figma.com/design/SdftBz3JDQneA4TA0JMtIu/Mad-Figma-Design--Copy-?node-id=0-1&t=yH05mNl3TSiR3RBM-1", label: "[ View UI Design ]" }
