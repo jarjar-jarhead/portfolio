@@ -32,16 +32,32 @@
   flex-wrap: wrap;
 }
 
-.viewBtn {
+.btnGroup {
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Identical target rule for both button and anchor tags */
+.viewBtn,
+.verifyLink {
   background: none;
   border: none;
   color: var(--neon-green);
   cursor: pointer;
   font-family: inherit;
+  font-size: 1rem;
   font-weight: 600;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+  display: inline-block;
   transition: text-shadow 0.3s;
 }
-.viewBtn:hover {
+
+.viewBtn:hover,
+.verifyLink:hover {
   text-shadow: 0 0 8px var(--neon-green);
 }
 
@@ -52,12 +68,12 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(5, 7, 13, 0.85); /* Heavy dark blur behind */
+  background-color: rgba(5, 7, 13, 0.85);
   backdrop-filter: blur(5px);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2000; /* Stays over the fixed navbar */
+  z-index: 2000;
 }
 
 .modalContent {
@@ -96,6 +112,6 @@
   width: 100%;
   height: 100%;
   border: none;
-  background-color: #ffffff; /* Gives a clean canvas for the PDF loading state */
+  background-color: #ffffff;
   border-radius: 4px;
 }
