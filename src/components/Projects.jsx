@@ -2,15 +2,29 @@ import React, { useState } from "react";
 import styles from "./Projects.module.css";
 
 function Projects() {
-  // Keeping state strictly for local static image assets if needed later
   const [activeImage, setActiveImage] = useState(null);
 
   const myProjects = [
     {
+      title: "Customer Churn & Sentiment Pipeline",
+      desc: "An automated churn prediction and NLP pipeline leveraging an XGBoost classification model to calculate risk probabilities, integrated with Gemini API to generate executive retention reports from telemetry data and text feedback.",
+      tools: ["Python", "XGBoost", "Gemini API", "NLP", "Google Colab"],
+      actions: [
+        { type: "link", url: "https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME", label: "[ View Codebase ]" }
+      ]
+    },
+    {
+      title: "Codebase Insight Engine",
+      desc: "A cloud-native Next.js and FastAPI application engineered in GitHub Codespaces. Integrates Gemini and GitHub APIs to automate architectural analysis with a dark-mode Tailwind CSS dashboard rendering live insight reports.",
+      tools: ["Next.js", "FastAPI", "Python", "Tailwind CSS", "Gemini API"],
+      actions: [
+        { type: "link", url: "https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME", label: "[ View Codebase ]" }
+      ]
+    },
+    {
       title: "SDPT Learn",
       desc: "An interactive learning management web application featuring gamified learning system, structured roadmaps, progress tracking, and dynamic quiz features for students.",
       tools: ["React", "Firebase", "CSS", "Javascript", "JSON"],
-      
       actions: [
         { type: "link", url: "https://youtu.be/w18Ha1udr6Q", label: "[ Watch Demo ]" },
         { type: "link", url: "https://canva.link/y6zwit8yeg4gpqg", label: "[ Documentation ]" }
@@ -32,7 +46,7 @@ function Projects() {
         { type: "link", url: "https://www.figma.com/design/faj59z9SbLf8qimhKd6v4J/SAD-UI-DESIGN--Copy-?node-id=0-1&m=dev", label: "[ View Prototype ]" }
       ]
     },
-{
+    {
       title: "Foxbyte Note App",
       desc: "A lightweight, responsive note-taking application designed for efficient markdown editing, real-time saving, and clean workspace organization.",
       tools: ["React", "JavaScript", "CSS Modules"],
@@ -48,7 +62,7 @@ function Projects() {
       actions: [
         { type: "link", url: "https://sites.google.com/bulsu.edu.ph/mgd-24-25/project-showcase-24-25/bsit-3h-g1/g6", label: "[ View Project Hub ]" }
       ]
-    },
+    }
   ];
 
   return (
@@ -67,7 +81,6 @@ function Projects() {
               </div>
             </div>
             
-            {/* Multi-Action Flex Button Box Container */}
             <div className={styles.actionContainer}>
               {project.actions.map((act, idx) => 
                 act.type === "link" ? (
@@ -95,7 +108,6 @@ function Projects() {
         ))}
       </div>
 
-      {/* Simplified Image Showcase Overlay Modal */}
       {activeImage && (
         <div className={styles.modalOverlay} onClick={() => setActiveImage(null)}>
           <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
