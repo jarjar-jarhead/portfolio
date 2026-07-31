@@ -19,6 +19,23 @@ function Hero() {
         <a href="#projects" className={styles.heroBtn}>
           View My Work
         </a>
+
+        {/* New Counter Row */}
+        <div className={styles.statsContainer}>
+          <div className={styles.statBox}>
+            <span className={styles.statNumber}>7+</span>
+            <span className={styles.statLabel}>Projects</span>
+          </div>
+          <div className={styles.statBox}>
+            <span className={styles.statNumber}>6</span>
+            <span className={styles.statLabel}>Certs</span>
+          </div>
+          <div className={styles.statBox}>
+            <span className={styles.statNumber}>2+</span>
+            <span className={styles.statLabel}>Clients</span>
+          </div>
+        </div>
+
       </div>
       <div className={styles.imagePlaceholder}>
         <div className={styles.avatar}>
