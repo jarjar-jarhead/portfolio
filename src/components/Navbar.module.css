@@ -169,3 +169,48 @@
   background-color: #ffffff; /* White canvas background so PDF loads clearly */
   border-radius: 4px;
 }
+
+/* --- Modal Header Bar Layout --- */
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.resumeSwitchGroup {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.switchBtn {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.switchBtn:hover {
+  color: var(--neon-green);
+  border-color: var(--neon-green);
+}
+
+/* Highlight style when a profile is selected */
+.activeSwitch {
+  color: var(--neon-green);
+  border-color: var(--neon-green);
+  background-color: rgba(0, 200, 117, 0.1);
+  box-shadow: 0 0 10px rgba(0, 200, 117, 0.2);
+}
+
+/* Adjust closeBtn margin since modalHeader now handles vertical spacing */
+.closeBtn {
+  align-self: unset;
+  margin-bottom: 0;
+}

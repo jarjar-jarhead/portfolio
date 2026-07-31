@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 
 function Navbar() {
-  // State to handle opening and closing the resume modal
   const [isResumeOpen, setIsResumeOpen] = useState(false);
+  // Default to your general dev resume path
+  const [selectedResume, setSelectedResume] = useState("/resume-dev.pdf");
 
   return (
     <>
@@ -13,37 +14,46 @@ function Navbar() {
         </div>
 
         <ul className={styles.navLinks}>
-          <li>
-            <a href="#hero">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#certifications">Certs</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certs</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
 
-        {/* Set state to true on click to reveal modal */}
         <button className={styles.resumeBtn} onClick={() => setIsResumeOpen(true)}>
           Resume
         </button>
       </nav>
 
-      {/* The Pop-up Modal Container for Resume */}
+      {/* Pop-up Modal Container for Dual Resumes */}
       {isResumeOpen && (
         <div className={styles.modalOverlay} onClick={() => setIsResumeOpen(false)}>
           <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
-            <button className={styles.closeBtn} onClick={() => setIsResumeOpen(false)}>✕ Close</button>
-            <iframe 
-              src="/resume.pdf" 
-              title="Resume Viewer" 
+            <div className={styles.modalHeader}>
+              <div className={styles.resumeSwitchGroup}>
+                <button
+                  className={`${styles.switchBtn} ${selectedResume === "/resume-dev.pdf" ? styles.activeSwitch : ""}`}
+                  onClick={() => setSelectedResume("/resume-dev.pdf")}
+                >
+                  [ Software Dev ]
+                </button>
+                <button
+                  className={`${styles.switchBtn} ${selectedResume === "/resume-ai.pdf" ? styles.activeSwitch : ""}`}
+                  onClick={() => setSelectedResume("/resume-ai.pdf")}
+                >
+                  [ AI / Data ]
+                </button>
+              </div>
+
+              <button className={styles.closeBtn} onClick={() => setIsResumeOpen(false)}>
+                ✕ Close
+              </button>
+            </div>
+
+            <iframe
+              src={selectedResume}
+              title="Resume Viewer"
               className={styles.pdfViewer}
             />
           </div>
