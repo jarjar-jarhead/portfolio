@@ -4,7 +4,7 @@ import styles from "./Certifications.module.css";
 function Certifications() {
   const [activePdf, setActivePdf] = useState(null);
 
-  
+  // Uniform schema across all certificate entries
   const certs = [
     {
       id: 1,
@@ -42,7 +42,7 @@ function Certifications() {
       id: 5,
       title: "Learning Basic ABAP Programming",
       issuer: "SAP",
-      year: "Intermediate Level",
+      year: "2026",
       file: null,
       badgeUrl: "https://badger.learning.sap.com/verify/xesec-cusid-pahen-fosec-momuk"
     },
@@ -50,9 +50,17 @@ function Certifications() {
       id: 6,
       title: "Managing Clean Core for SAP Cloud ERP",
       issuer: "SAP",
-      year: "Beginner Level",
+      year: "2026",
       file: null,
       badgeUrl: "https://badger.learning.sap.com/verify/xamuk-hytab-tyned-bokal-renes"
+    },
+    {
+      id: 7,
+      title: "Data Science Essentials With Python",
+      issuer: "Cisco Networking Academy | IBM SkillsBuild / DICT-ITU DTC",
+      year: "2026 (in progress)",
+      file: null,
+      badgeUrl: null
     }
   ];
 
@@ -80,14 +88,14 @@ function Certifications() {
 
                 {/* External Badge Verification Link */}
                 {cert.badgeUrl && (
-                  <button
+                  <a
                     href={cert.badgeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={styles.viewBtn}
+                    className={styles.verifyLink}
                   >
                     [ Verify Badge ]
-                  </button>
+                  </a>
                 )}
               </div>
             </div>
