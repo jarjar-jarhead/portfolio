@@ -27,6 +27,7 @@ function Projects() {
       tools: ["React", "Firebase", "CSS", "Javascript", "JSON", "Figma"],
       actions: [
         { type: "link", url: "https://youtu.be/w18Ha1udr6Q", label: "[ Watch Demo ]" },
+        { type: "link", url: "https://sdpt-learn.web.app/", label: "[ View Project ]" },
         { type: "link", url: "https://canva.link/y6zwit8yeg4gpqg", label: "[ Documentation ]" }
       ]
     },
