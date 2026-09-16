@@ -6,6 +6,15 @@ function Projects() {
 
   const myProjects = [
     {
+      title: "Chaldea OS // Tactical Servant Analytics",
+      desc: "A containerized, telemetry-styled tactical dossier and comparative workbench for FGO. Packages a multi-stage Dockerized Django 5 engine with baked-in SQLite data, streaming real-time LLM niche evaluations via Google Gemini API through a custom asynchronous teletype Markdown parser.",
+      tools: ["Python", "Django 5", "Docker", "Gemini API", "Tailwind CSS", "Gunicorn", "Render"],
+      actions: [
+        { type: "link", url: "https://chaldea-os.onrender.com/", label: "[ Launch Terminal ]" },
+        { type: "link", url: "https://github.com/jarjar-jarhead/chaldea-os", label: "[ View Source ]" }
+      ]
+    },
+    {
       title: "Customer Churn & Sentiment Pipeline",
       desc: "An automated churn prediction and NLP pipeline leveraging an XGBoost classification model to calculate risk probabilities, integrated with Gemini API to generate executive retention reports from telemetry data and text feedback.",
       tools: ["Python", "XGBoost", "Gemini API", "NLP", "Google Colab"],
