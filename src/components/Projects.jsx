@@ -7,7 +7,7 @@ function Projects() {
   const myProjects = [
     {
       title: "Chaldea OS // Tactical Servant Analytics",
-      desc: "A containerized, telemetry-styled tactical dossier and comparative workbench for FGO. Packages a multi-stage Dockerized Django 5 engine with baked-in SQLite data, streaming real-time LLM niche evaluations via Google Gemini API through a custom asynchronous teletype Markdown parser.",
+      desc: "An FGO tactical dashboard and comparison tool built with Django and Docker, featuring automated data syncing and real-time AI debriefs via Google Gemini.",
       tools: ["Python", "Django 5", "Docker", "Gemini API", "Tailwind CSS", "Gunicorn", "Render"],
       actions: [
         { type: "link", url: "https://chaldea-os.onrender.com/", label: "[ Launch Terminal ]" },
